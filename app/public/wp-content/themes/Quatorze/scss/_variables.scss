@@ -1,0 +1,145 @@
+// color
+$white: #eef1f7 !default;
+$gold:#6f5e42;
+$gray-100:#323232;
+$gray-200:#e7e7e7;
+$gray-300:#e5e5e5;
+$red-arp:#A3342A;
+
+//color-section
+$arpege-main:#BA9A66;
+$arpege-main-alpha:#f5ecd9;
+$arpege-cream:#FFFAED;
+
+$ar-cream:#FCF8E8;
+$ar-gold:#C0985D;
+$ar-red:#B12721;
+$ar-brg:#48091D;
+$ar-black:#271710;
+
+//hoverのbrightneww
+$indensity:110%;
+$duration:0.5s;
+
+//ここでpcとspの幅を定義
+$pc: 1073px; 
+$sp: 736px;
+
+//ここでmax-widthを指定
+@mixin tablet {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+//Font
+h2{
+     font-size: 30px;
+     letter-spacing: 0.15em;
+     font-weight: 500;
+     color: $ar-gold;
+}
+
+h3{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+h4{
+    font-size: 15px;
+}
+
+p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: $ar-black;
+    font-weight: 400;
+}
+
+.sm{
+    font-style: italic;
+    font-size: 12px;
+}
+
+.md{
+    font-size: 15px;
+}
+
+@include tablet{
+h2{
+     font-size: 30px;
+     letter-spacing: 0.15em;
+     font-weight: 500;
+     color: $ar-gold;
+}
+
+h3{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+h4{
+    font-size: 15px;
+}
+
+p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: $ar-black;
+    font-weight: 400;
+}
+
+.sm{
+    font-style: italic;
+    font-size: 12px;
+}
+
+.md{
+    font-size: 15px;
+}
+
+}
+
+@include sp{
+    h2{
+        font-size: 24px;
+        letter-spacing: 0.15em;
+        font-weight: 500;
+        color: $ar-gold;
+    }
+
+    h3{
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+
+    h4{
+        font-size: 15px;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 1.65;
+        color: $ar-black;
+        font-weight: 400;
+    }
+
+    .sm{
+        font-style: italic;
+        font-size: 12px;
+    }
+
+    .md{
+        font-size: 15px;
+    }
+}
+

@@ -1,0 +1,149 @@
+.concept{
+    background-color: rgba($color: $ar-gold, $alpha: 0.15);
+}
+
+.concept_section{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+
+.concept_wrap{
+    width:48%;
+    background-color: $ar-cream;
+    padding: 62px 72px;
+}
+
+.concept_title {
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 48px;
+}
+
+.concept_title:before,
+.concept_title:after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: $ar-gold;
+    display: block;
+}
+
+.concept_title:before {
+    margin-right: 16px;
+}
+
+.concept_title:after {
+    margin-left: 16px;
+}
+
+.concept_img{
+    width: 48%;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.concept_text{
+    display: block;
+    color: $ar-gold;
+    margin: 0 auto;
+    margin-bottom: 31px;
+}
+
+.concept_sentence{
+     margin-bottom: 26px;
+}
+
+.concept_sentence:last-child {
+    margin-bottom: 0;
+}
+
+.concept_img_sp{
+    display: none;
+}
+
+@include tablet{
+    
+    .concept_section{
+        flex-direction: column;
+    }
+
+    .concept_wrap{
+        width: 100%;
+        padding-left: 210px;
+    }
+
+    .concept_img{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+}
+
+@include sp{
+
+    .concept_title {
+        align-items: center;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        max-width: 304px;
+        margin: 0 auto;
+    }
+
+    .concept_title:before,
+    .concept_title:after {
+        content: "";
+        flex-grow: 1;
+        height: 1px;
+        background: $ar-gold;
+        display: block;
+    }
+
+    .concept_title:before {
+        margin-right: 20px;
+    }
+
+    .concept_title:after {
+        margin-left: 20px;
+    }
+
+    .concept_text{
+        margin-bottom: 28px;
+    }
+
+    .concept_img{
+        display: none;
+    }
+    
+    .concept_img_sp{
+        display: block;
+        width: 304px;
+        width: 100%;
+        padding-top: 40px;
+        margin-bottom: 28px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .concept_wrap{
+         padding: 0px 40px;
+    }
+
+    .concept_sentence{
+     margin-bottom: 32px;
+    }
+
+    .concept_sentence:last-child {
+        margin-bottom: 32px;
+    }
+    
+    .concept_section{
+        padding-bottom: 56px;
+    }
+
+}
+

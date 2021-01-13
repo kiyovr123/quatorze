@@ -1,0 +1,91 @@
+/*
+Theme Name: Arpege theme
+Theme URI: http://arpege-i.com
+Author: Kiyotaka Yamada
+Author URI: http://arpege-i.com
+Description: Restaurant arpege theme.
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+body {
+    font-family:'EB Garamond','dnp-shuei-mincho-pr6n', serif;
+    font-weight: 600;
+    background-color: $ar-cream;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  }
+
+ul li {
+    list-style: none;
+    padding-left: 0;
+}
+
+.container {
+    padding: 0px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 976px;
+}
+
+.box{
+    height: 52px;
+    background-color:$gray-100;
+}
+
+.section_img{
+    img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: 50% 30%;
+    }
+}
+
+.br_sp{
+    display: none;
+}
+
+.sp_only{
+    display: none;
+}
+
+
+@include tablet{
+    .container{
+        max-width: 736px;
+    }
+}
+
+@include sp{
+   .container {
+        overflow: hidden;
+        padding: 0px 18px;
+        display: block;
+    }
+    .sp_only{
+        display: block;
+    }
+
+    .br_pc{
+        display: none;
+    }
+
+    .br_sp{
+        display: block;
+    }
+
+
+}
+
+
+
+
+

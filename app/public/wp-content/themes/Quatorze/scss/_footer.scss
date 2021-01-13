@@ -1,0 +1,213 @@
+footer{
+    color: $ar-cream;
+    background-color: $ar-gold;
+}
+
+.footer_wrap{
+    padding: 96px 0px;
+   
+}
+
+.footer_flex_wrap{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-top: 1px solid $ar-cream;
+    border-bottom: 1px solid $ar-cream;
+    padding: 64px 0px;
+    
+}
+
+.footer_left{
+    width: 336px;
+}
+
+.footer_logo{
+    img{
+        width: 180px;
+    }
+}
+
+.footer_sitemap{
+    width:152px;
+    h4{
+        margin-bottom: 32px;
+        letter-spacing: 0.09em;
+        font-weight: 600;
+    }
+    li{
+        font-weight: 500;
+        padding-bottom: 8px;
+        font-size: 15px;
+    }
+    ul:hover li a {
+        opacity: 0.62;
+        transition: 0.5s;
+    }
+
+    ul li a:hover {
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    a{
+        transition: 0.5s;
+    }
+}
+
+.footer_corp{
+    width:152px;
+    h4{
+        margin-bottom: 32px;
+         letter-spacing: 0.09em;
+         font-weight: 600;
+    }
+    li{
+        padding-bottom: 8px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+        ul:hover li a {
+        opacity: 0.62;
+        transition: 0.5s;
+    }
+
+    ul li a:hover {
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    a{
+        transition: 0.5s;
+    }
+}
+
+.footer_top_btn{
+    width: 336px;
+}
+
+.footer_top{
+    padding-top: 64px;
+    text-align: center;
+    transition: $duration;
+    p{
+        color: $ar-cream;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+    }
+}
+.footer_top:hover{
+    filter: brightness($indensity);
+}
+
+.sns_icon{
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.trade_mark{
+    font-size: 12px;
+    font-weight: 400;
+}
+.trade_mark_sp{
+    display: none;
+}
+
+@include sp{
+    .footer_wrap{
+        padding: 40px 0px 128px 0px;
+    }
+    .footer_top_btn{
+        display: none;
+    }
+    .footer_flex_wrap{
+        flex-direction: column;
+        max-width: 304px;
+        margin: 0 auto;
+        padding: 20px 0px;
+    }
+    .footer_logo{
+    img{
+        width: 112px;
+    }
+}
+    .footer_left{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 9px;
+        width: 309px;
+    }
+    .footer_sitemap{
+        width: 100%;
+        ul{
+            li{
+                 border-bottom: 1px solid rgba($color: $ar-cream, $alpha: 0.3);
+                 padding: 16px 0px 16px 16px;
+            }
+        }
+        .sitemap-box{
+            display: flex;
+        }
+        .arrow{
+
+        }
+        h4{
+            margin-bottom: 0px;
+            padding: 16px 0px;
+            border-top: 1px solid rgba($color: $ar-cream, $alpha: 0.3);
+            border-bottom: 1px solid rgba($color: $ar-cream, $alpha: 0.3);
+         }
+        h4:after{
+           content: url(../assets/images/footer/foot_arrow.svg);
+            position: relative;
+            float: right;
+            margin-right: 6px;
+        }
+    }
+
+    .footer_corp{
+        width: 100%;
+        ul{
+            li{
+                border-bottom: 1px solid rgba($color: $ar-cream, $alpha: 0.3);
+                padding: 16px 0px 16px 16px;
+
+            }
+        }
+        h4{
+            margin-bottom: 0px;
+            padding: 16px 0px;
+            border-bottom: 1px solid rgba($color: $ar-cream, $alpha: 0.3);
+        }
+        h4:after{
+           content: url(../assets/images/footer/foot_arrow.svg);
+            position: relative;
+            float: right;
+            margin-right: 6px;
+        }
+    }
+    .trade_mark{
+        display: none;
+    }
+    .trade_mark_sp{
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        color: $ar-cream;
+        margin: 0 auto;
+        padding-top: 64px;
+    }
+    .sns_icon{
+        margin-bottom: 0px;
+    }
+
+    .arrow {
+     display: block;
+     width: 12px;
+     height: 12px;
+     border-top: solid 3px $ar-cream;
+     border-right: solid 3px $ar-cream;
+     //-webkit-transform: rotate(45deg);
+     transform: rotate(135deg);
+}
+}

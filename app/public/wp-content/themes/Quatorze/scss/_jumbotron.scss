@@ -1,0 +1,142 @@
+
+.jumbtron{
+    width: 100%;
+    box-sizing: border-box;
+
+  div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    height: 100vh;
+    background-attachment: fixed;
+    }
+  
+}
+
+.jumbtron h1{
+  font-size: 0px;
+}
+
+.jumbtron div.main01 {
+  background-image: url(../assets/images/top/no3.jpg) ;
+}
+
+.jumbtron div.main02 {
+  background-image: url(../assets/images/top/no2.jpg);
+}
+
+.jumbtron div.main03 {
+  background-image: url(../assets/images/top/no1.jpg);
+}
+
+.jumbtron .slick-dots {
+    bottom: 4%;
+    z-index: +1;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  color: $ar-cream;
+}
+
+.take_out_btn{
+  position: fixed;
+  right: 48px;
+  bottom: 48px;
+  z-index: 1000;
+  transition: $duration;
+
+  .takeout_wrap{
+    background-color: $ar-cream;
+    border-radius: 32px;
+    box-shadow: 0 0 0 1px $ar-gold;
+    width: 192px;
+    height: 64px;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+    color: $ar-black;
+    padding-left: 24px;
+  }
+
+  .take_out{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    .take_out_text{
+      line-height: 1.25;
+      letter-spacing: -0.13em;
+    }
+    img{
+      padding-right: 8px;
+    }
+  }
+}
+.take_out_btn:hover{
+  filter: brightness($indensity);
+}
+
+@include tablet{
+  .jumbtron{
+      div{
+        background-attachment: scroll;
+      }
+  }
+  
+}
+
+@include sp{
+
+.jumbtron div.main01 {
+  background-image: url(../assets/images/top/no3.jpg);
+}
+
+.jumbtron div.main02 {
+  background-image: url(../assets/images/top/no2.jpg);
+}
+
+.jumbtron div.main03 {
+  background-image: url(../assets/images/top/no1.jpg);
+}
+
+.take_out_btn{
+  position: fixed;
+  right: 50%;
+  transform: translate(50%, 0%);
+
+  .takeout_wrap{
+    background-color: $ar-cream;
+    border-radius: 32px;
+    box-shadow: 0 0 0 1px $ar-gold;
+    width: 144px;
+    height: 48px;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    color: $ar-black;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .take_out{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    .take_out_text{
+      line-height: 1.25;
+      letter-spacing: -0.13em;
+    }
+    img{
+      width: 26.6px;
+      padding-right: 0px;
+    }
+  }
+
+}
+
+}
